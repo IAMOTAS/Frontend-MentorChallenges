@@ -1,6 +1,50 @@
 
-
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    font-family: 'Libre Franklin' sans-serif;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.heading h1{
+    font-weight: 300;
+    padding: 50px 0 20px;
+}
+
+.heading h1 span{
+    font-weight: 700;
+    
+}
+
+.heading p {
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+.heading .form-control{
+    width: 300px;
+    margin: auto;
+}
+
+.heading .form-control input{
+    width: 100%;
+    padding: 8px;
+}
+
+ul{
+    list-style-type: none;
+}
 
 .attribution { 
     font-size: 11px; text-align: center;
