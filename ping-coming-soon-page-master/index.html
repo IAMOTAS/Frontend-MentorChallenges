@@ -1,31 +1,71 @@
+<!--version of the html-->
 <!DOCTYPE html>
+
+<!--Root Element-->
 <html lang="en">
+
+<!--Head section-->
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <link rel="stylesheet" href="styles.css">  
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <title>Frontend Mentor | Ping coming soon page</title>
 
   
 </head>
+
+<!--body section-->
+
 <body>
 
-  We are launching soon!
+  <header class="header">
 
-  Subscribe and get notified
+<img src="./images/logo.svg" alt="Ping logo" />
 
-  Notify Me
+  </header>
 
-  &copy; Copyright Ping. All rights reserved.
+  <section class="heading">
 
+    <h1>We are launching <span>soon!</span></h1> 
+    <p> Subscribe and get notified</p>
+
+    <form class="form-control">
+      <input type="email" name="email" id="email"placeholder="input your email" autocomplete="off" required>
+      <button type="submit"> Notify Me</button>
+    </form>
+
+  </section>
+
+<img src="./images/illustration-dashboard.png" alt="ping showcase image">
+
+ <section class="showcase">
+
+ </section>
+
+
+
+<!--footer Section-->
   <footer>
+    <ul>
+      <li><a href=""><i class ="fab fa-facebook"></i></a></li>
+      <li><a href=""><i class ="fab fa-twitter"></i></a></li>
+      <li><a href=""><i class ="fab fa-instagram"></i></a></li>
+    </ul>
+
     <p class="attribution">
       Challenge by <a href="https://github.com/IAMOTAS" target="_blank">FrontendMentor</a>. 
       Coded by <a href="https://otasresume.vercel.app/">OKAI TETTEY ANTIE SAMUEL(O.T.A.S)</a>.
     </p>
+
+    <p>&copy; Copyright Ping. All rights reserved.</p>
+
   </footer>
 </body>
 </html>
