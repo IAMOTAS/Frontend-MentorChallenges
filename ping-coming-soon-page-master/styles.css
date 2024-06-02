@@ -17,6 +17,10 @@ body{
     padding: 50px 0;
 }
 
+h1, p{
+    color: hsl(0, 0, 59%);
+}
+
 .heading h1{
     font-weight: 300;
     padding: 50px 0 20px;
@@ -39,12 +43,72 @@ body{
 
 .heading .form-control input{
     width: 100%;
+    margin-bottom: 10px;
     padding: 8px;
+    font-family: inherit;
+    font-size: 14px;
+    color:hsl(223, 87%, 63%);
+    border:3px solid hsl(223, 87%, 63%);
+    border-radius:30px;
+    outline: none;
+}
+
+.heading .form-control input::placeholder{
+    color: hsl(223, 87%, 63%);
+}
+
+.heading .form-control button{
+    width:100%;
+    background-color:hsl(223, 96%, 50%);
+    color:#fff;
+    font-family: inherit;
+    padding: 8px;
+    border:3px solid hsl(223, 87%, 63%);
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.heading .form-control button:hover{
+    background-color: transparent;
+    color: hsl(223, 87%, 63%);
 }
 
 ul{
     list-style-type: none;
 }
+
+.showcase{
+    padding: 50px 20px 80px;
+}
+
+.footer ul{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer ul li{
+    margin: 0 20px ;
+}
+
+.footer ul li a{
+    color: hsl(223, 87%, 63%);
+    padding: 10px;
+    transition: background-color 0.4s;
+}
+
+.footer ul li a:hover{
+    background-color:yellow ;
+    border-radius: 50%;
+    color: red;
+}
+
+.footer p{
+    padding-top: 20px;
+    font-size: 14px;
+}
+
 
 .attribution { 
     font-size: 11px; text-align: center;
@@ -56,4 +120,33 @@ ul{
 
 body{
     background-color: aqua;
+}
+
+
+/*setting constraints*/
+
+
+@media (min-width:700px){
+    .heading h1{
+        font-size: 36px;
+    }
+
+    .heading .form-control{
+        width: auto;
+    }
+
+    .heading .form-control input,
+    .heading .form-control button{
+        width: auto;
+        padding: 12px 20px;
+    }
+
+    .heading .form-control button{
+        width:150px;
+    }
+
+    .showcase img{
+        width: 600px;
+    }
+
 }
