@@ -54,6 +54,7 @@ body{
     height: 8px;
     border-radius: 50%;
     background-color: rgb(248, 240, 240);
+    z-index: 2;
 
 }
 
@@ -66,7 +67,7 @@ body{
 
 .hand i{
     position: absolute;
-    height: 70px;
+    height: var(--h);
     background-color:var(--clr);
     width: 4px;
     border-radius: 8px;
