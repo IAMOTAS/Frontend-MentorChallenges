@@ -47,6 +47,12 @@ const Weather = () => {
 
             const response = await fetch (url);
             const data = await response.json();
+
+            if(!response.ok){
+                alert(data.message);
+                return;
+            }
+
             console.log(data);
             const icon = allIcons[data.weather[0].icon] || clear_icon;
             setweatherData({
@@ -58,7 +64,8 @@ const Weather = () => {
             })
         }
         catch(error){
-
+            setweatherData(false);
+            console.error("Error in fetching weather data");
         }
     }
 
@@ -73,6 +80,9 @@ useEffect(()=>{
         <input ref={inputRef} type='text' placeholder = 'Search'/>
         <img src={search_icon} alt='' onClick={()=>search(inputRef.current.value)}/>
     </div>
+
+    {weatherData?<>
+
     <img src={weatherData.icon} alt='' className='weather-icon'/>
     <p className='temperature'>{weatherData.temperature}</p>
     <p className='location'>{weatherData.location}</p>
@@ -95,6 +105,7 @@ useEffect(()=>{
 
 
     </div>
+    </>:<></>}
 
     </div>
   )
