@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: blue;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: yellow;
+}
+
+.container{
+    position: relative;
+}
+
+.clock{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-color: black;
+    border: 2px solid ;
+    box-shadow: 0px 0px 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock span{
+    position: absolute;
+    transform: rotate(calc(30deg*var(--i))); /*division of circle into 12sections*/
+    inset: 12px;/*this puts all numbers around the circle*/
+    text-align: center; /*fits them into the circle*/
+      
+}
+
+.clock span b{
+    /*changes the numbers from being inverted*/
+
+    transform: rotate(calc(-30deg*var(--i)));
+    display: inline-block;
+    font-size: 20px;
+}
+
+.clock::before{
+    content:'';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgb(248, 240, 240);
+    z-index: 2;
+
+}
+
+.hand{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hand i{
+    position: absolute;
+    height: var(--h);
+    background-color:var(--clr);
+    width: 4px;
+    border-radius: 8px;
+}
