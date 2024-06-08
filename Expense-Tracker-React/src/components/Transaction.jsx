@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Transaction = () => {
+const Transaction = ({transaction}) => {
   return (
     
       <li className='minus'>
