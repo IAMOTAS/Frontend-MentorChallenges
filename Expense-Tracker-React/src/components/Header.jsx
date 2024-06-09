@@ -1,5 +1,9 @@
-const Header = () => {
-  return <h2>React Expense Tracker</h2>;
-};
+import React from 'react';
 
-export default Header;
+export const Header = () => {
+  return (
+    <h2>
+      React-Expense-Tracker
+    </h2>
+  );
+}
