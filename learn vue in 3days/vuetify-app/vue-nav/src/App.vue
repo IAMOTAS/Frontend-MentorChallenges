@@ -1,19 +1,23 @@
 <template>
   <v-app>
     <v-main>
-      <HelloWorld/>
+      
+      <v-toolbar-title>
+        Vuetify App
+      </v-toolbar-title>
+
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
 
 export default {
   name: 'App',
 
   components: {
-    HelloWorld,
+    
   },
 
   data: () => ({
