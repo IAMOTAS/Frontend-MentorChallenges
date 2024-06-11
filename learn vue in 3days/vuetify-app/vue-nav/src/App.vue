@@ -9,7 +9,7 @@ style="padding:0px 90px"
  color="dark"
  light
  elevation="6"
- elevate-on-scroll
+ 
  
  >
 
