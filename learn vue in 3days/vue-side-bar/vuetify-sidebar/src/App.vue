@@ -21,6 +21,10 @@ style="padding:0px 90px"
   <v-list-item-title>{{ menu.title }}</v-list-item-title>
 </v-list-item>
 
+<v-btn>
+  <v-icon></v-icon>
+</v-btn>
+
  </v-list>
 
 </v-app-bar>
