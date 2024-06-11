@@ -1,12 +1,28 @@
 <template>
   <v-app>
-    <v-main>
-      
-      <v-toolbar-title>
-        Vuetify App
-      </v-toolbar-title>
 
-    </v-main>
+    <v-app-bar
+ 
+ app
+ color="dark"
+ light
+ elevation="6"
+ 
+ 
+ >
+
+ <v-toolbar-title>
+    Vuetify-App
+  </v-toolbar-title>
+
+</v-app-bar>
+
+ <v-main>
+   
+  
+ </v-main>
+
+
   </v-app>
 </template>
 
