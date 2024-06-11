@@ -13,9 +13,15 @@ style="padding:0px 90px"
  
  >
 
- <v-toolbar-title>
-    Vuetify-App
-  </v-toolbar-title>
+ <v-toolbar-title> O.T.A.S </v-toolbar-title>
+
+ <v-list>
+
+<v-list-item>
+  <v-list-item-title>Home</v-list-item-title>
+</v-list-item>
+
+ </v-list>
 
 </v-app-bar>
 
