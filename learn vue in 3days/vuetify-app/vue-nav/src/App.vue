@@ -2,12 +2,14 @@
   <v-app>
 
     <v-app-bar
- 
+
+style="padding:0px 90px"
+
  app
  color="dark"
  light
  elevation="6"
- 
+ elevate-on-scroll
  
  >
 
