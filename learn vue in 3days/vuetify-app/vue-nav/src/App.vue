@@ -14,7 +14,7 @@ style="padding:0px 90px"
  >
 
  <v-toolbar-title> O.T.A.S </v-toolbar-title>
-
+<v-spacer/>
  <v-list>
 
 <v-list-item>
