@@ -40,12 +40,13 @@ style="padding:0px 90px"
 export default {
   name: 'App',
 
-  components: {
-    
-  },
+data(){
+  return{
+    menus: [
+      {title:'Home',route:'home'}
+    ]
+  }
+}
 
-  data: () => ({
-    //
-  }),
 }
 </script>
