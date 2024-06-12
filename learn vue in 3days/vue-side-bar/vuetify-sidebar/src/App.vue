@@ -21,9 +21,11 @@ style="padding:0px 90px"
   <v-list-item-title>{{ menu.title }}</v-list-item-title>
 </v-list-item>
 
-<v-btn>
-  <v-icon></v-icon>
+<v-btn text>
+  <v-icon>mdi-magnify</v-icon>
 </v-btn>
+
+<v-btn outlined color ="success">Get</v-btn>
 
  </v-list>
 
