@@ -1,35 +1,7 @@
 <template>
   <v-app>
 
-    <v-app-bar
-
-style="padding:0px 90px"
-
- app
- color="dark"
- light
- elevation="6"
- elevate-on-scroll
- 
- >
-
- <v-toolbar-title> O.T.A.S </v-toolbar-title>
-<v-spacer/>
- <v-list class="d-flex align-center">
-
-<v-list-item  v-for="(menu, index) in menus" :key="index" :to="menu.route">
-  <v-list-item-title>{{ menu.title }}</v-list-item-title>
-</v-list-item>
-
-<v-btn text>
-  <v-icon>mdi-magnify</v-icon>
-</v-btn>
-
-<v-btn outlined color ="success">Get</v-btn>
-
- </v-list>
-
-</v-app-bar>
+<Header/>    
 
  <v-main>
    
@@ -41,10 +13,11 @@ style="padding:0px 90px"
 </template>
 
 <script>
-
+import Header from "./components/Header.vue"
 
 export default {
   name: 'App',
+  components: {Header},
 
 data(){
   return{
