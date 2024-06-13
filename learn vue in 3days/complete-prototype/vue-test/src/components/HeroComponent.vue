@@ -10,7 +10,7 @@
 <v-btn color="indigo" class="white--text" rounded>We Begin</v-btn>
 </v-col>
 
-<v-icon>mdi-play-circle</v-icon>
+<v-icon>mdi-play-circle</v-icon> Watch Video
 
 <v-col lg="6">
 
