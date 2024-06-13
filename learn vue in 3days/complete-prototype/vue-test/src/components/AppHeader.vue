@@ -7,7 +7,7 @@
       elevation="6"
       elevate-on-scroll
     >
-      <v-toolbar-title>Otas-prototype</v-toolbar-title>
+      <v-toolbar-title>(2821Labs)Otas-prototype</v-toolbar-title>
       <v-spacer />
       <v-list class="d-flex align-center">
         <v-list-item v-for="(menu, index) in menus" :key="index" :to="menu.route">
@@ -45,6 +45,13 @@
   </script>
   
   <style scoped>
-  /* Your styles here */
+  
+.v-toolbar__title{
+    font-size: 32px;
+    color:#4caf50;
+    font-weight: 700;
+    font-family:cursive;
+}
+
   </style>
   
