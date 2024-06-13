@@ -13,7 +13,7 @@
 <v-icon>mdi-play-circle</v-icon> Watch Video
 
 <v-col lg="6">
-
+<img width="100%" src="" alt="_blank"/>
 </v-col>
 
 </v-row>

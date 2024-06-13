@@ -3,16 +3,19 @@
     <AppHeader />
     <v-main>
       <!-- Main content -->
+
+<HeroComponent/>
+
     </v-main>
   </v-app>
 </template>
 
 <script>
 import AppHeader from './components/AppHeader.vue';
-
+import HeroComponent from './components/HeroComponent.vue'
 export default {
   name: 'App',
-  components: { AppHeader },
+  components: { HeroComponent, AppHeader },
   data() {
     return {
       menus: [
