@@ -5,6 +5,8 @@
       <!-- Main content -->
 
 <HeroComponent/>
+  <AboutUs/>
+
 
     </v-main>
   </v-app>
@@ -13,14 +15,15 @@
 <script>
 import AppHeader from './components/AppHeader.vue';
 import HeroComponent from './components/HeroComponent.vue'
+import AboutUs from './components/AboutUs.vue'
 export default {
   name: 'App',
-  components: { HeroComponent, AppHeader },
+  components: { AboutUs,HeroComponent, AppHeader },
   data() {
     return {
       menus: [
         { title: 'Home', route: 'home' },
-        { title: 'About', route: 'about' },
+        { title: 'AboutUs', route: 'aboutus' },
         { title: 'Services', route: 'services' },
         { title: 'Support', route: 'support' },
         { title: 'Vision', route: 'vision' },
