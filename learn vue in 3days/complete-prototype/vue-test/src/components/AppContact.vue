@@ -15,7 +15,7 @@
 
         </v-col>
 
-        <v-col>
+        <v-col lg="6">
 
         </v-col>
 
