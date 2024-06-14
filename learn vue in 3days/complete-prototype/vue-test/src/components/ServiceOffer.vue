@@ -26,6 +26,10 @@
                 </div>
             </v-col>
 
+            <v-col lg="3">
+
+            </v-col>
+
         </V-row>
     
     </v-container>
