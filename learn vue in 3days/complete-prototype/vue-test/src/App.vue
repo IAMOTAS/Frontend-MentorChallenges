@@ -6,6 +6,7 @@
 
 <HeroComponent/>
   <AboutUs/>
+  <ServiceOffer/>
 
 
     </v-main>
@@ -16,14 +17,15 @@
 import AppHeader from './components/AppHeader.vue';
 import HeroComponent from './components/HeroComponent.vue'
 import AboutUs from './components/AboutUs.vue'
+import ServiceOffer from './components/ServiceOffer.vue'
 export default {
   name: 'App',
-  components: { AboutUs,HeroComponent, AppHeader },
+  components: {AboutUs,HeroComponent, AppHeader,ServiceOffer },
   data() {
     return {
       menus: [
         { title: 'Home', route: 'home' },
-        { title: 'AboutUs', route: 'aboutus' },
+        { title: 'About', route: 'about' },
         { title: 'Services', route: 'services' },
         { title: 'Support', route: 'support' },
         { title: 'Vision', route: 'vision' },
