@@ -13,20 +13,21 @@
             
             <v-col lg="12">
                 <div class="text-center">
-                    <v-chip class="mx-5">Web App</v-chip>
-                    <v-chip class="mx-5">Mobile App</v-chip>
-                    <v-chip class="mx-5">Desktop App</v-chip>
-                    <v-chip class="mx-5">Telecomms</v-chip>
-                    <v-chip class="mx-5">Networking</v-chip>
-                    <v-chip class="mx-5">Sys-Admin</v-chip>
-                    <v-chip class="mx-5">Telecomms</v-chip>
-                    <v-chip class="mx-5">AI&ML</v-chip>
-                    <v-chip class="mx-5">Electronics</v-chip>
-                    <v-chip class="mx-5">cryptoProg.</v-chip>
+                    <v-chip :color ="activePortfolio='webapp' ? 'success' : ''" class="mx-5">Web App</v-chip>
+                    <v-chip @click="activePortfolio='Mobile App' ? 'success' : ''" class="mx-5">Mobile App</v-chip>
+                    <v-chip @click="activePortfolio='Desktop App' ? 'success' : ''" class="mx-5">Desktop App</v-chip>
+                    <v-chip @click="activePortfolio='Telecomms' ? 'success' : ''" class="mx-5">Telecomms</v-chip>
+                    <v-chip @click="activePortfolio='Networking' ? 'success' : ''" class="mx-5">Networking</v-chip>
+                    <v-chip @click="activePortfolio='Sys-Admin' ? 'success' : ''" class="mx-5">Sys-Admin</v-chip>
+                    <v-chip @click="activePortfolio='Telecomms' ? 'success' : ''" class="mx-5">Telecomms</v-chip>
+                    <v-chip @click="activePortfolio='AI&ML' ? 'success' : ''" class="mx-5">AI&ML</v-chip>
+                    <v-chip @click="activePortfolio='Electronics' ? 'success' : ''" class="mx-5">Electronics</v-chip>
+                    <v-chip @click="activePortfolio='cryptoProg.' ? 'success' : ''" class="mx-5">cryptoProg.</v-chip>
                 </div>
             </v-col>
+          <slot >
 
-            <v-col lg="3">
+            <v-col lg="3" >
                 <v-card class="mx-auto" max-width="400">
     <v-img
       color="surface-variant"
@@ -34,6 +35,8 @@
       src="https://cdn.vuetifyjs.com/docs/images/cards/purple-flowers.jpg"
       cover
     >
+
+
       <v-toolbar color="transparent">
         <template v-slot:prepend>
           <v-btn icon="$menu"></v-btn>
@@ -69,7 +72,7 @@
     </v-card-text>
   </v-card>
             </v-col>
-
+          </slot>
         </V-row>
     
     </v-container>
@@ -79,7 +82,16 @@
     <script>
     
         export default{
-            name : "ServiceOffer"
+            name : "ServiceOffer",
+            data(){
+              return{
+                aactivePortfolio:"webApp",
+                webApps:[
+                  {title:'web App 1'}
+                ]
+                //Do same for other services.
+              }
+            }
         }
     
     </script>
