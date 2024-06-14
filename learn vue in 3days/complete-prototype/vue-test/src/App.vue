@@ -9,6 +9,7 @@
   <ServiceOffer/>
   <AppSupport/>
   <AppPartners/>
+  <AppContact/>
 
 
     </v-main>
@@ -22,9 +23,10 @@ import AboutUs from './components/AboutUs.vue'
 import ServiceOffer from './components/ServiceOffer.vue'
 import AppSupport from './components/AppSupport.vue'
 import AppPartners from './components/AppPartners.vue'
+import AppContact from './components/AppContact.vue'
 export default {
   name: 'App',
-  components: {AboutUs,HeroComponent, AppHeader,ServiceOffer,AppSupport,AppPartners },
+  components: {AboutUs,HeroComponent, AppHeader,ServiceOffer,AppSupport,AppPartners,AppContact },
   data() {
     return {
       menus: [

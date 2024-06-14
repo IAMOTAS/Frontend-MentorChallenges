@@ -6,9 +6,17 @@
 
         <v-col lg="12" class="text-center">
             <v-subheader class="text-h4 justify-center">
-                Services
+                ContactUs
             </v-subheader>
-            <p>Below are the services we offer and some already completed Projects.</p>
+            <p>Get intouch with our team.</p>
+        </v-col>
+
+        <v-col lg="6">
+
+        </v-col>
+
+        <v-col>
+
         </v-col>
 
     </V-row>
