@@ -16,15 +16,15 @@
     
             <v-list>
                 <v-list-item>
-                    <v-icon color="success">md-check-all</v-icon>
+                    <v-icon color="success">mdi-check-all</v-icon>
                     <v-list-item-subtitle> we offer wide range of I.T Services</v-list-item-subtitle>
                 </v-list-item>
                 <v-list-item>
-                    <v-icon color="success">md-check-all</v-icon>
+                    <v-icon color="success" class="mr-3">mdi-check-all</v-icon>
                     <v-list-item-subtitle> Talk about Artificial Intelligence, Machine Learning, Quantum Programming, Crytoprogramming, webservices,mobile,electronics,telecomunications,networking,systems Administration e.t.c</v-list-item-subtitle>
                 </v-list-item>
                 <v-list-item>
-                    <v-icon color="success">md-check-all</v-icon>
+                    <v-icon color="success">mdi-check-all</v-icon>
                     <v-list-item-subtitle> Your Business is in Safe Hands.</v-list-item-subtitle>
                 </v-list-item>
                 <p>We are here to partner with you.The Best Customer Service you can ever dream about. we have the solutions. we solve your problems in less than 24 hours.</p>
