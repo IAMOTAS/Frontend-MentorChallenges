@@ -1,6 +1,6 @@
-const app = VueCreate.App({
+const app = Vue.createApp({
 
-    template: <h1>HelloWorld</h1>
+    template: '<h1>HelloWorld</h1>'
 
 })
 
