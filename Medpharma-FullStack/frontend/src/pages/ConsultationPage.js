@@ -4,14 +4,14 @@ import ConsultationList from '../components/ConsultationList';
 
 const ConsultationPage = () => {
   const [consultations, setConsultations] = useState([]);
-  
+
   const handleConsultationCreated = (newConsultation) => {
-    setConsultations([...consultations, newConsultation]);
+    setConsultations((prevConsultations) => [...prevConsultations, newConsultation]);
   };
-  
+
   return (
     <div>
-      <h1>Consultations</h1>
+      <h2>Consultations</h2>
       <ConsultationForm onConsultationCreated={handleConsultationCreated} />
       <ConsultationList consultations={consultations} />
     </div>

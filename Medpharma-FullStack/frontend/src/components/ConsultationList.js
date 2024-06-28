@@ -4,7 +4,7 @@ import { api } from '../api';
 const ConsultationList = () => {
   const [consultations, setConsultations] = useState([]);
   const [filter, setFilter] = useState('');
-  
+
   useEffect(() => {
     const fetchConsultations = async () => {
       try {
@@ -16,7 +16,7 @@ const ConsultationList = () => {
     };
     fetchConsultations();
   }, []);
-  
+
   const filteredConsultations = consultations.filter(
     (consultation) =>
       consultation.patient.name.includes(filter) ||
@@ -24,7 +24,7 @@ const ConsultationList = () => {
       consultation.consultationType.includes(filter) ||
       consultation.medicalCondition.includes(filter)
   );
-  
+
   return (
     <div>
       <input

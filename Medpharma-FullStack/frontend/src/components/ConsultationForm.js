@@ -6,7 +6,7 @@ const ConsultationForm = ({ onConsultationCreated }) => {
   const [healthcareProvider, setHealthcareProvider] = useState('');
   const [consultationType, setConsultationType] = useState('');
   const [medicalCondition, setMedicalCondition] = useState('');
-  
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -21,7 +21,7 @@ const ConsultationForm = ({ onConsultationCreated }) => {
       console.error('Failed to create consultation:', error);
     }
   };
-  
+
   return (
     <form onSubmit={handleSubmit}>
       <input

@@ -6,7 +6,7 @@ const AuthForm = ({ isLogin, onAuthSuccess }) => {
   const [password, setPassword] = useState('');
   const [name, setName] = useState('');
   const [role, setRole] = useState('officer');
-  
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -20,7 +20,7 @@ const AuthForm = ({ isLogin, onAuthSuccess }) => {
       console.error('Authentication failed:', error);
     }
   };
-  
+
   return (
     <form onSubmit={handleSubmit}>
       {!isLogin && (
